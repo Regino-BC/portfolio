@@ -27,7 +27,8 @@
         </div>
     }
     </div>
-
+    
+    # Section 2
     <div class="portfolio-container">
     @if (projects is null)
     {
@@ -61,6 +62,44 @@
                 <img src="@(hero.Src)" style="height: 90%; width: 100%; object-fit: cover;" 
                     alt="@(hero.Alt)" />
             }
+        </div>
+    }
+    </div>
+
+    # Section 3
+    <div class="portfolio-container">
+    @if (projects is null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else
+    {
+        <div class="portfolio-hero">
+            @if (hero is not null)
+            {
+                <img src="@(hero.Src)" style="height: 90%; width: 100%; object-fit: cover;" 
+                    alt="@(hero.Alt)" />
+            }
+        </div>
+        <div style="background-color: white; width: 50%; padding: 4rem; margin: 3rem auto; text-align: center;">
+        <h2>About Myself</h2>
+        @if (aboutMe is null)
+        {
+            <p><em>Loading...</em></p>
+        }
+        else
+        {
+            <p class="large">@aboutMe.Description</p>
+            <hr />
+            <ul style="text-align: left; columns: 2; font-size: 1.25rem; margin: 2rem 3rem; gap: 3rem;">
+            @foreach (var skill in aboutMe.Skills)
+            {
+                <li key="@skill">@skill</li>
+            }
+            </ul>
+            <hr />
+            <p style="padding: 1rem 3rem 0;">@aboutMe.DetailOrQuote</p>
+        }
         </div>
     }
     </div>
