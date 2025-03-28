@@ -1,12 +1,18 @@
 {
-  "name": "Alexandrie Grenier",
-  "title": "Web Designer & Content Creator",
-  "email": "alex@example.com",
-  "devDotTo": null,
-  "gitHub": "microsoft",
-  "instagram": "microsoft",
-  "linkedIn": "satyanadella",
-  "medium": "",
-  "twitter": "microsoft",
-  "youTube": "dotnet"
+  "name": "Regino Barranquero Cardeñosa",
+  "title": "Data Scientist and Artificial Intelligence Expert",
+  "email": "regino.barranquero@iata.csic.es",
+  "phone": "+34 91 585 49 00",
+  "address": "C/ Serrano 117, 28006 Madrid, Spain",
+  "description": "I am a Data Scientist and Artificial Intelligence Expert at the Institute of Theoretical and Applied Artificial Intelligence (IATAI) of the Spanish National Research Council (CSIC). I am also a member of the Spanish Association for Artificial Intelligence (AEPIA) and the Spanish Society of Statistics and Operations Research (SEIO).",
+  "keywords": "Data Science, Artificial Intelligence, Machine Learning, Deep Learning, Statistics, Operations Research, Optimization, Big Data, Data Mining, Predictive Analytics, Business Intelligence, Data Visualization, Data Engineering, Data Governance, Data Quality, Data Security, Data Privacy, Data Ethics, Data Protection, Data Compliance, Data Strategy, Data Architecture, Data Management, Data Integration, Data Warehousing, Data Lake, Data Mart, Data Warehouse, Data Center, Data Cloud, Data Lakehouse, Data Pipeline, Data Catalog, Data Model, Data Schema, Data Schemaless, Data Query, Data Querying, Data Processing, Data Transformation, Data Enrichment, Data Wrangling, Data Cleaning, Data Munging, Data Imputation, Data Normalization, Data Standardization, Data Harmonization, Data Deduplication, Data Matching, Data Linkage, Data Fusion, Data Integration, Data Aggregation, Data Segmentation, Data Clustering, Data Classification, Data Regression, Data Anomaly Detection, Data Outlier Detection, Data Change Detection, Data Trend Detection, Data Forecasting, Data Simulation, Data Optimization, Data Personalization, Data Recommendation, Data Ranking, Data Scoring, Data Profiling, Data Auditing, Data Monitoring, Data Alerting, Data Reporting, Data Dashboarding, Data Storytelling, Data Journalism, Data Science Journalism, Data Science Communication, Data Science Education, Data Science Training, Data Science Consulting, Data Science Research, Data Science Development, Data Science Engineering, Data Science Operations, Data Science Governance, Data Science Strategy, Data Science Architecture, Data Science Management, Data Science Leadership, Data Science Team, Data Science Culture, Data Science Community, Data Science Society, Data Science Association, Data Science Institute, Data Science Laboratory, Data Science Center, Data Science Department, Data Science Division, Data Science Unit, Data Science Office, Data Science Group, Data Science Network, Data Science Platform, Data Science Tool, Data Science Library, Data Science Framework, Data Science Environment, Data Science Ecosystem, Data Science Marketplace, Data Science Repository, Data Science Registry, Data Science Directory, Data Science Index, Data Science Catalog, Data Science Wiki, Data Science Forum, Data Science Blog, Data Science News, Data Science Magazine, Data Science Journal, Data Science Conference, Data Science Workshop, Data Science Seminar, Data Science Webinar, Data Science Course, Data Science Bootcamp, Data Science Hackathon, Data Science Competition, Data Science Challenge, Data Science Project, Data Science",
+  "image": "https://reginobarranquero.github.io/assets/images/regino-barranquero.jpg",
+  "favicon": "https://reginobarranquero.github.io/assets/images/favicon.ico",
+  "logo": "https://reginobarranquero.github.io/assets/images/logo.png",
+  "social": {
+    "devDotTo": null,
+    "gitHub": "reginobarranquero",
+    "instagram": "reginobarranquero",
+    "linkedIn": "reginobarranquero"
+  }
 }
