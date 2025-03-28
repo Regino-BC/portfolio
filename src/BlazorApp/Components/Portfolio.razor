@@ -80,6 +80,7 @@
     protected override async Task OnInitializedAsync()
     {
         projects = await Http.GetFromJsonAsync<List<Project>>("sample-data/projects.json");
+        aboutMe = await Http.GetFromJsonAsync<AboutMe>("sample-data/aboutme.json");
         hero = await HeroImageService.GetHeroAsync(img => img.Name is "portfolio");
     }
 }
