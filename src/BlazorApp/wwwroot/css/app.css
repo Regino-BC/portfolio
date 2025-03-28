@@ -117,7 +117,7 @@ li {
 }
 
 li::marker {
-  color: #4e567e;
+  color: #990707;
 }
 
 a {
@@ -126,7 +126,7 @@ a {
 }
 
 a:hover {
-  color: #4e567e;
+  color: #990707;
 }
 
 .portfolio-container {
