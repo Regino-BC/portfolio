@@ -158,6 +158,7 @@ a:hover {
   display: grid;
   grid-template-columns: 330px 300px;
   grid-gap: 20px;
+  align-self: center;
 }
 
 @media screen and (max-width: 420px) {
@@ -166,6 +167,7 @@ a:hover {
     display: inline;
     grid-template-columns: 330px 300px;
     grid-gap: 20px;
+    align-self: center;
   }
 }
 
