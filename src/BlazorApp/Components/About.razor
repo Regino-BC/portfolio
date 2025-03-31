@@ -4,14 +4,14 @@
         <img class="background" src="@(hero.Src)" alt="@(hero.Alt)" />
     }
     <h2>Publications</h2>
-    <div class="portfolio-container" style="background-color: white; width: 50%; padding: 4rem; margin: 3rem auto; text-align: center;">
+    <div class="portfolio-container">
     @if (projects is null)
     {
         <p><em>Loading...</em></p>
     }
     else
     {
-        <div class="container">
+        <div class="container" style="background-color: white; text-align: center;">
             @foreach (var project in projects)
             {
                 <div class="box" key="@project.Title">
