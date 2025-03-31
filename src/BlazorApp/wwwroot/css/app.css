@@ -163,7 +163,7 @@ a:hover {
 @media screen and (max-width: 420px) {
   .container {
     margin: 20px auto;
-    display: inline;
+    display: flex;
     grid-template-columns: 330px 300px;
     grid-gap: 20px;
   }
