@@ -3,24 +3,32 @@
     {
         <img class="background" src="@(hero.Src)" alt="@(hero.Alt)" />
     }
-    <h2>About Myself</h2>
-    <div style="background-color: white; width: 50%; padding: 4rem; margin: 3rem auto; text-align: center;">
-    @if (aboutMe is null)
+    <h2>Publications</h2>
+    <div class="portfolio-container">
+    @if (projects is null)
     {
         <p><em>Loading...</em></p>
     }
     else
     {
-        <p class="large">@aboutMe.Description</p>
-        <hr />
-        <ul style="text-align: left; columns: 2; font-size: 1.25rem; margin: 2rem 3rem; gap: 3rem;">
-        @foreach (var skill in aboutMe.Skills)
-        {
-            <li key="@skill">@skill</li>
-        }
-        </ul>
-        <hr />
-        <p style="padding: 1rem 3rem 0;">@aboutMe.DetailOrQuote</p>
+        <div class="portfolio-hero">
+            @if (hero is not null)
+            {
+                <img src="@(hero.Src)" style="height: 90%; width: 100%; object-fit: cover;" 
+                    alt="@(hero.Alt)" />
+            }
+        </div>
+        <div class="container">
+            @foreach (var project in projects)
+            {
+                <div class="box" key="@project.Title">
+                    <a href="@project.Url" target="_blank" rel="noopener noreferrer">
+                        <h3 style="flex-basis: 40px;">@project.Title</h3>
+                    </a>
+                    <p class="small">@project.Description</p>
+                </div>
+            }
+        </div>
     }
     </div>
 </section>
@@ -33,10 +41,12 @@
     public required HeroImageService HeroImageService { get; set; }
 
     private AboutMe? aboutMe;
+    private List<Project>? projects;
     private HeroImage? hero;
 
     protected override async Task OnInitializedAsync()
     {
+        projects = await Http.GetFromJsonAsync<List<Project>>("sample-data/projects.json");
         aboutMe = await Http.GetFromJsonAsync<AboutMe>("sample-data/aboutme.json");
         hero = await HeroImageService.GetHeroAsync(img => img.Name is "about");
 
