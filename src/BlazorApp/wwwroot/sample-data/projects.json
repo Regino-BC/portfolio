@@ -1,22 +1,22 @@
 [
   {
-    "title": "10 Things To Know About Azure Static Web Apps 🎉",
-    "description": "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    "url": "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i"
+    "title": "Urban wastewater-based epidemiology for multi-viral pathogen surveillance in the Valencian region, Spain",
+    "description": "Inés Girón-Guzmán, Enric Cuevas-Ferrando, Regino Barranquero, Azahara Díaz-Reolid, Pablo Puchades-Colera, Irene Falcó, Alba Pérez-Cataluña, Gloria Sánchez",
+    "url": "https://doi.org/10.1016/j.watres.2024.121463"
   },
   {
-    "title": "Web Development for Beginners",
-    "description": "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    "url": "https://github.com/microsoft/web-dev-for-beginners"
+    "title": "Survival of viruses in water microcosms",
+    "description": "Inés Girón-Guzmán, Irene Falcó, Enric Cuevas-Ferrando, Sandra Ballesteros, Regino Barranquero, Gloria Sánchez ",
+    "url": "https://doi.org/10.1016/j.scitotenv.2025.178416"
   },
   {
-    "title": "My Resume Site",
-    "description": "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    "url": "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website"
+    "title": "Integration of Behavioral Economic Models to Optimize ML performance and interpretability: a sandbox example",
+    "description": "Emilio Soria-Olivas, José E. Vila Gisbert, Regino Barranquero Cardeñosa, Yolanda Gomez",
+    "url": "https://doi.org/10.48550/arXiv.2205.01387"
   },
   {
-    "title": "GitHub Codespaces and github.dev",
-    "description": "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    "url": "https://www.youtube.com/watch?v=c3hHhRME_XI"
+    "title": "Tiny ML: La nueva revolución en la IoT",
+    "description": "Diego Calvete Sanz, Emilio Soria Olivas, Jose María Martínez Martínez, Juan Gómez Sanchis, Marcelino Martínez Sober, Pedro Dimas Martínez, Regino Barranquero Cardeñosa",
+    "url": "https://dx.doi.org/10.7203/PCUV-8"
   }
 ]
