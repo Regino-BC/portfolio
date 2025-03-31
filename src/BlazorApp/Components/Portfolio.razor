@@ -1,4 +1,8 @@
 <section class="light" id="portfolio">
+    @if (herob is not null)
+    {
+        <img class="background" src="@(herob.Src)" alt="@(herob.Alt)" />
+    }
     <h2>About me</h2>
     <!-- Section 1 -->
     <div class="portfolio-container">
@@ -13,7 +17,6 @@
             {
                 <img src="@(hero.Src)" style="height: 90%; width: 100%; object-fit: cover;" 
                     alt="@(hero.Alt)" />
-                <img class="background" src="@(herob.Src)" alt="@(herob.Alt)" />
             }
         </div>
         <div class="container">
