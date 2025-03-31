@@ -13,7 +13,7 @@
             {
                 <img src="@(hero.Src)" style="height: 90%; width: 100%; object-fit: cover;" 
                     alt="@(hero.Alt)" />
-                <img class="background" src="@(hero.Src)" alt="@(hero.Alt)" />
+                <img class="background" src="@(herob.Src)" alt="@(herob.Alt)" />
             }
         </div>
         <div class="container">
@@ -117,7 +117,7 @@
     public required HeroImageService HeroImageService { get; set; }
 
     private List<Project>? projects;
-    private HeroImage? hero;
+    private HeroImage? hero, herob;
     private AboutMe? aboutMe;
 
     protected override async Task OnInitializedAsync()
@@ -125,5 +125,6 @@
         projects = await Http.GetFromJsonAsync<List<Project>>("sample-data/projects.json");
         aboutMe = await Http.GetFromJsonAsync<AboutMe>("sample-data/aboutme.json");
         hero = await HeroImageService.GetHeroAsync(img => img.Name is "portfolio");
+        herob = await HeroImageService.GetHeroAsync(img => img.Name is "about");
     }
 }
