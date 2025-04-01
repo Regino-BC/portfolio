@@ -158,12 +158,13 @@ a:hover {
   display: grid;
   grid-template-columns: 330px 300px;
   grid-gap: 20px;
+  align-items: center;
 }
 
 @media screen and (max-width: 420px) {
   .container {
     margin: 20px auto;
-    display: flex;
+    display: inline;
     grid-template-columns: 330px 300px;
     grid-gap: 20px;
     align-items: center;
@@ -174,7 +175,7 @@ a:hover {
   border-radius: 10px;
   padding: 24px 16px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   border: 1px solid rgb(204, 204, 204);
   text-align: center;
