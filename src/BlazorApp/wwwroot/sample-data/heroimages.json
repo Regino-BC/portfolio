@@ -13,5 +13,10 @@
     "name": "portfolio",
     "src": "images/design-desk.jpeg",
     "alt": "desktop with books and laptop"
+  }, 
+  {
+    "name": "primera",
+    "src": "images/primera.jpeg",
+    "alt": "tratamiento de datos"
   }
 ]

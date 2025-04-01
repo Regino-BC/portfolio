@@ -155,7 +155,7 @@ a:hover {
 
 .container {
   margin: 20px auto;
-  display: grid;
+  display: flex;
   grid-template-columns: 330px 300px;
   grid-gap: 20px;
   align-items: center;
@@ -167,7 +167,6 @@ a:hover {
     display: inline;
     grid-template-columns: 330px 300px;
     grid-gap: 20px;
-    align-items: center;
   }
 }
 

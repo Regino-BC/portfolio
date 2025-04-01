@@ -13,10 +13,10 @@
     else
     {
         <div class="portfolio-hero">
-            @if (hero is not null)
+            @if (hero1 is not null)
             {
-                <img src="@(hero.Src)" style="height: 90%; width: 100%; object-fit: cover;" 
-                    alt="@(hero.Alt)" />
+                <img src="@(hero1.Src)" style="height: 90%; width: 100%; object-fit: cover;" 
+                    alt="@(hero1.Alt)" />
             }
         </div>
         <div style="width: 50%; padding: 4rem; margin: 3rem auto; text-align: center;">
@@ -27,9 +27,9 @@
         }
         else
         {
-            <p style="text-align: left;">Desde la gestión, preparación, preprocesado y toda la manipulación que conlleve, mis habilidades y conocimientos me permiten trabajar con datos de cualquier tipo y modalidad.
+            <p style="text-align: justify; padding: 1rem 3rem 0;">Desde la gestión, preparación, preprocesado y toda la manipulación que conlleve, mis habilidades y conocimientos me permiten trabajar con datos de cualquier tipo y modalidad.
             </p>
-            <p style="text-align: left;">Ya sean imágenes, texto, audio, datos numéricos, series temporales, etc. mi amplia experiencia me permiten abordar cualquier tipo de problema y necesidad, todo ello complementado con una amplia formación en análisis y visualización de datos y gestión de bases de datos relacionales y no relacionales.
+            <p style="text-align: justify; padding: 1rem 3rem 0;">Ya sean imágenes, texto, audio, datos numéricos, series temporales, etc. mi amplia experiencia me permiten abordar cualquier tipo de problema y necesidad, todo ello complementado con una amplia formación en análisis y visualización de datos y gestión de bases de datos relacionales y no relacionales.
             </p>
             <hr />
             <ul style="text-align: left; columns: 2; font-size: 1rem; margin: 2rem 3rem; gap: 3rem;">
@@ -39,7 +39,7 @@
             }
             </ul>
             <hr />
-            <p style="text-align: left; padding: 1rem 3rem 0;">Todo ello atendido con el más mínimo cuidado y profesionalidad, atendiendo a los conceptos de buenas prácticas en programación y siempre teniendo en cuenta las necesidades del problema a resolver, su utilidad y escalabilidad.</p>
+            <p style="text-align: justify; padding: 1rem 3rem 0;">Todo ello atendido con el más mínimo cuidado y profesionalidad, atendiendo a los conceptos de buenas prácticas en programación y siempre teniendo en cuenta las necesidades del problema a resolver, su utilidad y escalabilidad.</p>
         }
         </div>
     }
@@ -61,18 +61,31 @@
         }
         else
         {
-            <p style="text-align: left;">Desde la gestión, preparación, preprocesado y toda la manipulación que conlleve, mis habilidades y conocimientos me permiten trabajar con datos de cualquier tipo y modalidad.
-                Ya sean imágenes, texto, audio, datos numéricos, series temporales, etc. mi amplia experiencia me permiten abordar cualquier tipo de problema y necesidad, todo ello complementado con una amplia formación análisis y visualización de datos y gestión de bases de datos relacionales y no relacionales.
+            <p style="text-align: justify; padding: 1rem 3rem 0;">
+                Desde test estadísticos y contrastes de hipótesis, hasta modelos de lenguage e Inteligencia Artificial generativa.
+            </p>
+            <p style="text-align: justify; padding: 1rem 3rem 0;">
+                Mi formación y amplios conocimientos me permiten abordar cualquier tipo de problema y necesidad, aplicando métodos y modelos como:
             </p>
             <hr />
-            <ul style="text-align: left; columns: 2; font-size: 1.25rem; margin: 2rem 3rem; gap: 3rem;">
-            @foreach (var skill in aboutMe.Skills)
-            {
-                <li key="@skill">@skill</li>
-            }
+            <ul style="text-align: left; columns: 2; font-size: 1rem; margin: 2rem 3rem; gap: 3rem;">
+            <li key="Aprendizaje Supervisado">Aprendizaje Supervisado</li>
+            <li key="Clustering">Clustering</li>
+            <li key="Aprendizaje por Refuerzo">Aprendizaje por Refuerzo</li>
+            <li key="Procesamiento Natural del Lenguaje (NLP)">Procesamiento Natural del Lenguaje (NLP)</li>
+            <li key="IA generativa">IA generativa</li>
+            </ul>
+            <ul style="text-align: left; columns: 2; font-size: 1rem; margin: 2rem 3rem; gap: 3rem;">
+            <li key="Perceptrones Multicapa">Perceptrones Multicapa</li>
+            <li key="Redes Convolucionales">Redes Convolucionales</li>
+            <li key="Redes GAN">Redes GAN</li>
+            <li key="Mecanismos de Atención y Transformers">Mecanismos de Atención y Transformers</li>
+            <li key="Redes Neuronales Recurrentes">Redes Neuronales Recurrentes</li>
+            <li key="Modelos de Difusión">Modelos de Difusión</li>
+            <li key="Y un largo etcétera...">Y un largo etcétera...</li>
             </ul>
             <hr />
-            <p style="padding: 1rem 3rem 0;">Todo ello atendido con el más mínimo cuidado y profesionalidad, atendiendo a los conceptos de buenas prácticas en programación y siempre teniendo en cuenta las necesidades del problema a resolver, su utilidad y escalabilidad.</p>
+            <p style="text-align: justify; padding: 1rem 3rem 0;">Dependiendo de cada tipo de dato y el objetivo a resolver mis capacidades me permiten seleccionar, ajustar o crear el modelo ideal, ya sea desde cero o aplicando métodos de Transferencia de Aprendizaje o Fine-tunig.</p>
         }
         </div>
         <div class="portfolio-hero">
@@ -108,16 +121,31 @@
         }
         else
         {
-            <p class="large">@aboutMe.Description</p>
+            <p style="text-align: justify; padding: 1rem 3rem 0;">
+                Desde test estadísticos y contrastes de hipótesis, hasta modelos de lenguage e Inteligencia Artificial generativa.
+            </p>
+            <p style="text-align: justify; padding: 1rem 3rem 0;">
+                Mi formación y amplios conocimientos me permiten abordar cualquier tipo de problema y necesidad, aplicando métodos y modelos como:
+            </p>
             <hr />
-            <ul style="text-align: left; columns: 2; font-size: 1.25rem; margin: 2rem 3rem; gap: 3rem;">
-            @foreach (var skill in aboutMe.Skills)
-            {
-                <li key="@skill">@skill</li>
-            }
+            <ul style="text-align: left; columns: 2; font-size: 1rem; margin: 2rem 3rem; gap: 3rem;">
+            <li key="Aprendizaje Supervisado">Aprendizaje Supervisado</li>
+            <li key="Clustering">Clustering</li>
+            <li key="Aprendizaje por Refuerzo">Aprendizaje por Refuerzo</li>
+            <li key="Procesamiento Natural del Lenguaje (NLP)">Procesamiento Natural del Lenguaje (NLP)</li>
+            <li key="IA generativa">IA generativa</li>
+            </ul>
+            <ul style="text-align: left; columns: 2; font-size: 1rem; margin: 2rem 3rem; gap: 3rem;">
+            <li key="Perceptrones Multicapa">Perceptrones Multicapa</li>
+            <li key="Redes Convolucionales">Redes Convolucionales</li>
+            <li key="Redes GAN">Redes GAN</li>
+            <li key="Mecanismos de Atención y Transformers">Mecanismos de Atención y Transformers</li>
+            <li key="Redes Neuronales Recurrentes">Redes Neuronales Recurrentes</li>
+            <li key="Modelos de Difusión">Modelos de Difusión</li>
+            <li key="Y un largo etcétera...">Y un largo etcétera...</li>
             </ul>
             <hr />
-            <p style="padding: 1rem 3rem 0;">@aboutMe.DetailOrQuote</p>
+            <p style="text-align: justify; padding: 1rem 3rem 0;">Dependiendo de cada tipo de dato y el objetivo a resolver mis capacidades me permiten seleccionar, ajustar o crear el modelo ideal, ya sea desde cero o aplicando métodos de Transferencia de Aprendizaje o Fine-tunig.</p>
         }
         </div>
     }
@@ -133,6 +161,7 @@
 
     private List<Project>? projects;
     private HeroImage? hero;
+    private HeroImage? hero1;
     private HeroImage? herob;
     private AboutMe? aboutMe;
 
@@ -142,5 +171,6 @@
         aboutMe = await Http.GetFromJsonAsync<AboutMe>("sample-data/aboutme.json");
         hero = await HeroImageService.GetHeroAsync(img => img.Name is "portfolio");
         herob = await HeroImageService.GetHeroAsync(img => img.Name is "about");
+        hero1 = await HeroImageService.GetHeroAsync(img => img.Name is "primera");
     }
 }
