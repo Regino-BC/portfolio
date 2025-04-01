@@ -18,5 +18,20 @@
     "name": "primera",
     "src": "images/primera.jpeg",
     "alt": "tratamiento de datos"
+  }, 
+  {
+    "name": "segunda",
+    "src": "images/segunda.jpeg",
+    "alt": "modelos"
+  },
+  {
+    "name": "tercera",
+    "src": "images/tercera.jpeg",
+    "alt": "deploy"
+  },
+  {
+    "name": "yo",
+    "src": "images/yo.jpeg",
+    "alt": "yo"
   }
 ]

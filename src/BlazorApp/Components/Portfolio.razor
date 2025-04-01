@@ -15,7 +15,7 @@
         <div class="portfolio-hero">
             @if (hero1 is not null)
             {
-                <img src="@(hero1.Src)" style="height: 90%; width: 100%; object-fit: cover;" 
+                <img src="@(hero1.Src)" style="height: 90%; width: 100%; object-fit: cover; border-radius: 1rem; border: 1px solid #555;" 
                     alt="@(hero1.Alt)" />
             }
         </div>
@@ -89,10 +89,10 @@
         }
         </div>
         <div class="portfolio-hero">
-            @if (hero is not null)
+            @if (hero2 is not null)
             {
-                <img src="@(hero.Src)" style="height: 90%; width: 100%; object-fit: cover;" 
-                    alt="@(hero.Alt)" />
+                <img src="@(hero2.Src)" style="height: 90%; width: 100%; object-fit: cover; border-radius: 1rem; border: 1px solid #555;" 
+                    alt="@(hero2.Alt)" />
             }
         </div>
     }
@@ -107,10 +107,10 @@
     else
     {
         <div class="portfolio-hero">
-            @if (hero is not null)
+            @if (hero3 is not null)
             {
-                <img src="@(hero.Src)" style="height: 90%; width: 100%; object-fit: cover;" 
-                    alt="@(hero.Alt)" />
+                <img src="@(hero3.Src)" style="height: 90%; width: 100%; object-fit: cover; border-radius: 1rem; border: 1px solid #555;" 
+                    alt="@(hero3.Alt)" />
             }
         </div>
         <div style="width: 50%; padding: 4rem; margin: 3rem auto; text-align: center;">
@@ -146,6 +146,8 @@
     private List<Project>? projects;
     private HeroImage? hero;
     private HeroImage? hero1;
+    private HeroImage? hero2;
+    private HeroImage? hero3;
     private HeroImage? herob;
     private AboutMe? aboutMe;
 
@@ -156,5 +158,7 @@
         hero = await HeroImageService.GetHeroAsync(img => img.Name is "portfolio");
         herob = await HeroImageService.GetHeroAsync(img => img.Name is "about");
         hero1 = await HeroImageService.GetHeroAsync(img => img.Name is "primera");
+        hero2 = await HeroImageService.GetHeroAsync(img => img.Name is "segunda");
+        hero3 = await HeroImageService.GetHeroAsync(img => img.Name is "tercera");
     }
 }
